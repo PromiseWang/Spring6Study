@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        第一种方式: 引入外部的bean
+        1. 创建两个类对象: Department, Employee
+        2. 在Employee的bean标签里面, 使用property引入Department, Employee的bean
+    -->
+    <bean class="org.example.spring6.iocxml.ditest.Department" id="department">
+        <property name="dName" value="安保部"/>
+    </bean>
+
+    <bean class="org.example.spring6.iocxml.ditest.Employee" id="employee">
+        <!--普通属性注入-->
+        <property name="eName" value="lucy"/>
+        <property name="age" value="50"/>
+        <!--对象类型注入-->
+        <property name="department" ref="department"/>  <!--将部门对象引入  使用ref，外部bean注入-->
+    </bean>
+
+    <bean class="org.example.spring6.iocxml.ditest.Employee" id="employee2">
+        <!--内部bean注入-->
+        <property name="eName" value="mary"/>
+        <property name="age" value="30"/>
+        <property name="department">
+            <bean class="org.example.spring6.iocxml.ditest.Department">
+                <property name="dName" value="财务部"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!--
+        第二种方式: 及联赋值bean
+        1. 创建两个类对象: Department, Employee
+        2. 在Employee的bean标签里面, 使用property引入Department, Employee的bean
+    -->
+    <bean id="employee3" class="org.example.spring6.iocxml.ditest.Employee">
+
+    </bean>
+</beans>

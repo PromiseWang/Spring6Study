@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--bean通过set方法注入-->
+    <bean class="org.example.spring6.iocxml.di.Book" id="book">
+        <property name="bookName" value="HTML"/>
+        <property name="author" value="wangwu"/>
+
+    </bean>
+
+    <!--bean通过构造器注入-->
+    <bean class="org.example.spring6.iocxml.di.Book" id="bookConstructor">
+        <constructor-arg name="bookName" value="PHP"/>
+        <constructor-arg name="author" value="AAAAA"/>
+    </bean>
+</beans>

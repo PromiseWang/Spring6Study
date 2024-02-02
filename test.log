@@ -1,0 +1,4 @@
+20:13:49.601 DEBUG org.springframework.context.support.AbstractApplicationContext 672 prepareRefresh - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a79d4b1
+20:13:49.655 DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader 402 doLoadBeanDefinitions - Loaded 2 bean definitions from class path resource [bean-di-test.xml]
+20:13:49.665 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'department'
+20:13:49.681 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'employee'
