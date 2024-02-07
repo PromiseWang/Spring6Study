@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+    <!--1. 创建三个对象-->
+    <!--2. 注入普通类型属性-->
+    <bean class="org.example.spring6.iocxml.dimap.Student" id="student">
+        <property name="studentId" value="10000"/>
+        <property name="studentName" value="张三"/>
+        <property name="lessonList" ref="lessonList"/>
+        <property name="teacherMap" ref="teacherMap"/>
+    </bean>
+
+    <bean class="org.example.spring6.iocxml.dimap.Teacher" id="teacher1">
+        <property name="teacherName" value="蔡老师"/>
+        <property name="teacherId" value="100"/>
+    </bean>
+
+    <bean class="org.example.spring6.iocxml.dimap.Teacher" id="teacher2">
+        <property name="teacherName" value="徐老师"/>
+        <property name="teacherId" value="101"/>
+    </bean>
+
+    <bean class="org.example.spring6.iocxml.dimap.Lesson" id="lesson1">
+        <property name="lessonName" value="数据结构"/>
+    </bean>
+    <bean class="org.example.spring6.iocxml.dimap.Lesson" id="lesson2">
+        <property name="lessonName" value="计算机组成原理"/>
+    </bean>
+    <bean class="org.example.spring6.iocxml.dimap.Lesson" id="lesson3">
+        <property name="lessonName" value="操作系统"/>
+    </bean>
+    <bean class="org.example.spring6.iocxml.dimap.Lesson" id="lesson4">
+        <property name="lessonName" value="计算机网络"/>
+    </bean>
+
+    <!--3. 使用util: 类型  定义-->
+    <!--4. 在学生bean引入util: 类型定义bean, 完成list, map类型属性注入-->
+    <util:list id="lessonList">
+        <ref bean="lesson1"/>
+        <ref bean="lesson2"/>
+        <ref bean="lesson3"/>
+        <ref bean="lesson4"/>
+    </util:list>
+
+    <util:map id="teacherMap">
+        <entry key="10010" value-ref="teacher1"/>
+        <entry key="10011" value-ref="teacher2"/>
+    </util:map>
+
+    <bean class="org.example.spring6.iocxml.dimap.Student" id="studentP" p:studentId="1000" p:studentName="Mary"
+          p:lessonList-ref="lessonList" p:teacherMap-ref="teacherMap">
+
+    </bean>
+
+</beans>

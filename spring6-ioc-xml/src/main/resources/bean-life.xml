@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="org.example.spring6.iocxml.life.User" id="user" init-method="initMethod"
+          destroy-method="destroyMethod">
+        <property name="name" value="Lucy" />
+    </bean>
+    <!--bean的后置处理器要放入IoC容器才能生效-->
+    <bean class="org.example.spring6.iocxml.life.MyBeanPost" id="myBeanPost">
+
+    </bean>
+</beans>

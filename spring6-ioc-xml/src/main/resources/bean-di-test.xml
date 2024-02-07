@@ -32,11 +32,19 @@
     </bean>
 
     <!--
-        第二种方式: 及联赋值bean
+        第二种方式: 级联赋值bean
         1. 创建两个类对象: Department, Employee
         2. 在Employee的bean标签里面, 使用property引入Department, Employee的bean
     -->
     <bean id="employee3" class="org.example.spring6.iocxml.ditest.Employee">
+        <property name="eName" value="tom"/>
+        <property name="age" value="30"/>
 
+        <!--级联赋值-->
+        <property name="department" ref="department3"/>  <!--这里不能写value-->
+        <property name="department.dName" value="测试部"/>
+    </bean>
+    <bean id="department3" class="org.example.spring6.iocxml.ditest.Department">
+        <property name="dName" value="技术研发部"/>
     </bean>
 </beans>

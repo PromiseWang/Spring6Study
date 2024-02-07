@@ -1,5 +1,7 @@
 package org.example.spring6.iocxml.ditest;
 
+import java.util.Arrays;
+
 /**
  * Author: Wang Xinran
  * Date: 2024-02-02 18:01
@@ -14,6 +16,16 @@ public class Employee {
     // 员工输入某个部门
     private Department department;
 
+    public String[] getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(String[] hobbies) {
+        this.hobbies = hobbies;
+    }
+
+    // 爱好
+    private String[] hobbies;
 
     public String geteName() {
         return eName;
@@ -52,5 +64,6 @@ public class Employee {
     public void work() {
         System.out.println(eName + "员工在工作, 工龄为: " + age);
         department.info();
+        System.out.println(Arrays.toString(hobbies));
     }
 }

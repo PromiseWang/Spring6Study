@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="org.example.spring6.iocxml.ditest.Employee" id="employee1">
+        <property name="eName" value="Lucy"/>
+        <property name="age" value="20"/>
+    </bean>
+
+    <bean class="org.example.spring6.iocxml.ditest.Employee" id="employee2">
+        <property name="eName" value="Mary"/>
+        <property name="age" value="30"/>
+    </bean>
+
+    <bean class="org.example.spring6.iocxml.ditest.Department" id="department">
+        <property name="dName" value="技术研发部"/>
+        <property name="employeeList">
+            <list>
+                <ref bean="employee1"/>
+                <ref bean="employee2"/>
+            </list>
+        </property>
+    </bean>
+</beans>
