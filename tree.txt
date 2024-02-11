@@ -1,0 +1,11 @@
+📁 autowired/
+├─📁 dao/
+│ ├─📁 impl/
+│ │ └─📄 UserDaoImpl.java
+│ └─📄 UserDao.java
+├─📁 controller/
+│ └─📄 UserController.java
+└─📁 service/
+  ├─📁 impl/
+  │ └─📄 UserServiceImpl.java
+  └─📄 UserSerivce.java

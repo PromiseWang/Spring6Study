@@ -10,6 +10,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring6-ioc-xml</module>
+        <module>spring6-ioc-annotation</module>
+        <module>spring6-reflect</module>
+        <module>my-spring</module>
+        <module>spring6-aop</module>
     </modules>
 
     <properties>
@@ -50,6 +54,24 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.0.31</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+
+        <!--Spring AOP依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>6.0.2</version>
+        </dependency>
+        <!--Spring aspects依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>6.0.2</version>
         </dependency>
     </dependencies>
 </project>
