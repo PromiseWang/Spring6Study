@@ -5,7 +5,7 @@ import org.example.demo.Calculator;
 import java.lang.ref.PhantomReference;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-10 19:13
  * Description:
  */

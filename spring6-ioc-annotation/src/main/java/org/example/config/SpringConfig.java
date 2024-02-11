@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 23:47
  * Description:
  */

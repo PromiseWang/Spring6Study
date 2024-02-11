@@ -5,7 +5,7 @@ import org.example.spring6.iocxml.auto.dao.impl.UserDaoImpl;
 import org.example.spring6.iocxml.auto.service.UserService;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 16:32
  * Description:
  */

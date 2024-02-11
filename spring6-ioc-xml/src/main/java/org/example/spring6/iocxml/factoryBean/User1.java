@@ -1,7 +1,7 @@
 package org.example.spring6.iocxml.factoryBean;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 16:19
  * Description:
  */

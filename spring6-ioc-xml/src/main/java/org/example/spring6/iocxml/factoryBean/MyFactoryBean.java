@@ -3,7 +3,7 @@ package org.example.spring6.iocxml.factoryBean;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 16:18
  * Description:
  */

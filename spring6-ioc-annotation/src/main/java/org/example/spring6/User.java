@@ -3,7 +3,7 @@ package org.example.spring6;
 import org.springframework.stereotype.Component;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 20:14
  * Description:
  */

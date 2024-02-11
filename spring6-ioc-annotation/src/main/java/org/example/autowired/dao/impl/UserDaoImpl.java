@@ -4,7 +4,7 @@ import org.example.autowired.dao.UserDao;
 import org.springframework.stereotype.Repository;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 20:39
  * Description:
  */

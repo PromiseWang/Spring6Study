@@ -3,7 +3,7 @@ package org.example.spring6.iocxml.ditest;
 import java.util.Arrays;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-02 18:01
  * Description:
  */

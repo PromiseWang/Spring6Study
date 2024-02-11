@@ -4,7 +4,7 @@ import org.example.demo.Calculator;
 import org.springframework.stereotype.Component;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-09 13:12
  * Description: 基本的实现类, 实现四则运算
  */

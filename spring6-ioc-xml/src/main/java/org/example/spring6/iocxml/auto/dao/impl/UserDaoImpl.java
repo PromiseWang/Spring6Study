@@ -3,7 +3,7 @@ package org.example.spring6.iocxml.auto.dao.impl;
 import org.example.spring6.iocxml.auto.dao.UserDao;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 16:33
  * Description:
  */

@@ -4,7 +4,7 @@ import org.example.spring6.iocxml.auto.service.UserService;
 import org.example.spring6.iocxml.auto.service.impl.UserServiceImpl;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 16:31
  * Description:
  */

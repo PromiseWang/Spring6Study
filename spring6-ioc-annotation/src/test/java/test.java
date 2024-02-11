@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-07 20:29
  * Description:
  */

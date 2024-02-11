@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-10 19:46
  * Description:
  */

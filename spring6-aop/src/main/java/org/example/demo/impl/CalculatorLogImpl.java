@@ -3,7 +3,7 @@ package org.example.demo.impl;
 import org.example.demo.Calculator;
 
 /**
- * Author: Wang Xinran
+ * Author: Promise
  * Date: 2024-02-09 13:20
  * Description: 含有日志的实现类, 包含四则运算
  */
