@@ -1,11 +1,11 @@
 📁 autowired/
 ├─📁 dao/
-│ ├─📁 impl/
+│ ├─📁 interfaceTest/
 │ │ └─📄 UserDaoImpl.java
 │ └─📄 UserDao.java
 ├─📁 controller/
 │ └─📄 UserController.java
 └─📁 service/
-  ├─📁 impl/
+  ├─📁 interfaceTest/
   │ └─📄 UserServiceImpl.java
   └─📄 UserSerivce.java

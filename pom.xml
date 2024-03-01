@@ -12,8 +12,8 @@
         <module>spring6-ioc-xml</module>
         <module>spring6-ioc-annotation</module>
         <module>spring6-reflect</module>
-        <module>my-spring</module>
         <module>spring6-aop</module>
+        <module>spring6-tx</module>
     </modules>
 
     <properties>
@@ -28,6 +28,7 @@
             <artifactId>spring-context</artifactId>
             <version>6.1.2</version>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -72,6 +73,19 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>6.0.2</version>
+        </dependency>
+
+        <!--spring jdbc Spring持久化层支持jar包-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>6.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.3.20</version>
         </dependency>
     </dependencies>
 </project>
